@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Logo_skilllab.png" type="image/x-icon">
+    <title>Register-SkillLabIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background: rgba(225, 226, 231, 0.527);
+            padding: 20px 40px 20px ;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px #444;
+
+        }
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group input[type="submit"] {
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            gap: 10;
+            justify-content: space-between;
+        }
+        .toggler{
+            text-decoration: none;
+            color: #444;
+            text-align: center;
+            display: block;
+            margin-left: 10px;
+            font-size: 14px;
+            background: #ddd;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .toggler:hover{
+            background: #444;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Registration Form</h2>
+        <a href="client_registration.html" class="toggler">Client Registration</a>
+        </div>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="username">Student Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone">Phone No:</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

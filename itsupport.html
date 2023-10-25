@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="./images/Logo_skilllab.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!--icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./custom.css" />
+    <title>SkillLab Info Tech.</title>
+  </head>
+  <body>
+    <nav class="border-gray-200 bg-gray-700">
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+      >
+        <a href="index.html" class="flex items-center">
+          <img
+            src="./images/Logo_skilllab.png"
+            class="h-8 mr-3 rounded-full"
+            alt="Skilllab Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Skill<span class="text-pink-500">Lab</span></span
+          >
+        </a>
+        <div class="flex items-center flex-wrap">
+          <a
+            href="tel:01798-472082"
+            class="mr-3 text-sm text-gray-300 dark:text-white hover:underline"
+            ><i class="fa-solid fa-phone mr-1"></i>01798-472082</a
+          >
+          <ae
+            href="tel:01791-086553"
+            class="mr-3 text-sm text-gray-300 dark:text-white hover:underline"
+            ><i class="fa-solid fa-phone mr-1"></i>01791-086553</ae
+          >
+          <a
+            href="mailto:skilllabitacademy@gmail.com"
+            class="mr-3 text-sm text-gray-300 dark:text-white hover:underline"
+            ><i class="fa-regular fa-envelope mr-1"></i>skilllabitacademy@gmail.com</a
+          >
+          <a
+            href="https://shorturl.at/npqEG"
+            class="mr-3 text-sm text-gray-300 dark:text-white hover:underline"
+            ><i class="fa-brands fa-facebook-f mr-1"></i></i>FACEBOOK</a
+          >
+        </div>
+      </div>
+    </nav>
+  
+    <nav class="p-1 bg-gray-500 shadow flex md:items-center md:justify-between flex-wrap relative">
+      <div class="flex justify-between items-center ">
+        <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+  
+      <ul class="md:flex md:flex-wrap md:items-center z-[1000] md:z-auto md:static absolute text-white bg-gray-500 left-0 md:w-auto md:py-0 py-4 md:pl-0 px-3 md:opacity-100 opacity-0 top-0 transition-all ease-in duration-500 hidden w-[300px]">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="about.html" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="contact.html" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="course.html" class="text-xl hover:text-cyan-500 duration-500">COURSES</a>
+        </li>
+        <!-- <li class="mx-4 my-6 md:my-0">
+          <a href="team.html" class="text-xl hover:text-cyan-500 duration-500">TEAM</a>
+        </li> -->
+        <li class="mx-4 my-6 md:my-0">
+          <a href="software.html" class="text-xl hover:text-cyan-500 duration-500">SOFTWARE SOLUTION</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="itsupport.html" class="text-xl hover:text-cyan-500 duration-500">IT SOLUTION</a>
+        </li>
+        <li class="rounded-lg bg-orange-400 p-2 text-center m-2 hover:text-gray-700 hover:bg-orange-300">
+          <a href="Portfolio.html" class="text-xl duration-500">Portfolio</a>
+        </li>
+        <li class="rounded-lg bg-blue-400 p-2 text-center m-2 hover:text-cyan-500 hover:bg-white">
+          <a href="login.html" class="text-xl hover:text-cyan-500 duration-500">LogIn</a>
+        </li>
+        <li class="rounded-lg bg-blue-400 p-2 text-center m-2 hover:text-cyan-500 hover:bg-white">
+          <a href="register.html" class="text-xl hover:text-cyan-500 duration-500">Registration</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section>
+      <div class="w-full h-[600px]">
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <div class="overflow-hidden relative h-[600px]">
+            <div
+              class="duration-700 ease-in-out bg-cover justify-between p-5 grid md:grid-cols-3 h-[500px]"
+              style="background-image: url(./images/banner_img.png)"
+              data-carousel-item
+            >
+              <div href="#" class="hidden md:block w-full p-6 rounded-lg ">
+                <h5
+                  class="mb-2 text-3xl font-bold tracking-tight text-white p-2 hover:scale-105"
+                >
+                  Our Courses
+                </h5>
+
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">1. Web Development </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">2. App Development </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">3. Web Design </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">4. Graphics Design </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">5. Digital Marketing </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">6. Search Engine Optimization(SEO) </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">7. Affiliate Marketing </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">8. Professional Data Entry </a>
+                </p>
+              </div>
+
+              <div href="#" class="hidden md:block w-full p-6 rounded-lg">
+                <h5
+                  class="mb-2 text-3xl font-bold tracking-tight text-white p-2 hover:scale-105"
+                >
+                  Our Course Opportunities
+                </h5>
+
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">1. Computer Fundamentals </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">2. Basic English </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">3. Client Communication </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">4. Monthly Income $300 to $500</a>
+                </p>
+                <p>
+                  <br />
+                  <br />
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-700 px-6 py-2 rounded-xl text-xl"
+                    >Learn More...</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <img src="./images/call-center-2.png" class="h-[400px]" alt="..." />
+              </div>
+            </div>
+
+            <div
+              class="duration-700 ease-in-out bg-cover flex justify-around p-5 h-[500px]"
+              style="background-image: url(./images/banner_img.png)"
+              data-carousel-item
+            >
+              <div href="#" class="hidden md:block w-full p-6 rounded-lg ">
+                <h5
+                  class="mb-2 text-3xl font-bold tracking-tight text-white p-2 hover:scale-105"
+                >
+                  Our Services
+                </h5>
+
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">1. Web & Programming </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">2. Business Management Software </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">3. App Development </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">4. WordPress Websites </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">5. Account Management System </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">6. Digital Marketing </a>
+                </p>
+                <p></p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">4. SEO & SMM </a>
+                </p>
+                <p>
+                  <br />
+                  <br />
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-700 px-6 py-2 rounded-xl text-xl"
+                    >Learn More...</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <img src="./images/call-center-3.png"  class="h-[400px]" alt="..." />
+              </div>
+            </div>
+
+            <div
+              class="duration-700 ease-in-out bg-cover flex justify-between p-5 h-[500px]"
+              style="background-image: url(./images/banner_img.png)"
+              data-carousel-item
+            >
+              
+              <div href="#" class="hidden md:block w-full px-5 rounded-lg ">
+                <h5
+                  class="mb-2 text-3xl font-bold tracking-tight text-white p-2 hover:scale-105"
+                >
+                  Our IT  Support Services
+                </h5>
+
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">1. Cyber Security </a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">2. Bug Resistance</a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">3. Software Quality Assurance (SQA) </a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">4. Updating and maintaining company systems and networks</a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">5. Troubleshooting and resolving IT issues</a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">6. Installing and configuring software</a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">7. Managing user access permissions and credentials</a>
+                </p>
+                <p
+                  class="font-normal text-gray-300 text-xl p-1 hover:scale-105"
+                >
+                  <a href="">8. Rolling out patches and updates.</a>
+                </p>
+
+                <p>
+                  <br />
+                  <br />
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-700 px-6 py-2 rounded-xl text-xl"
+                    >Learn More...</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <img src="./images/call-center-4.png"  class="h-[400px]" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <!-- <div
+            class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div> -->
+
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Anterior</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Siguiente</span>
+            </span>
+          </button>
+        </div>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+    </section>
+    
+    <section class="p-7">
+      <div class="text-center mb-7">
+        <h2 class="font-bold text-4xl">Our IT Support Services</h2>
+        <h4 class="font-semibold text-lg text-gray-500">
+          Your Gateway to Excellence. Explore Our Comprehensive IT Support Services for
+          Exceptional IT Support.
+        </h4>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        
+             
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-bug text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            Bug Resistance
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Enhance your software's reliability with our Bug Resistance solutions. We identify and eliminate vulnerabilities, ensuring a smoother and more secure user experience. Invest in bug resistance for software that stands the test of time.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-bug-slash text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            Software Quality Assurance (SQA)
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Enhance your software's reliability with our Bug Resistance solutions. We identify and eliminate vulnerabilities, ensuring a smoother and more secure user experience. Invest in bug resistance for software that stands the test of time.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center  hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-masks-theater text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+              Cyber Security Service
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Protect your digital fortress with our Cybersecurity Services. We provide robust solutions to safeguard your data, networks, and systems from cyber threats. Trust us to keep your business secure in an ever-evolving digital world.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+        
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-network-wired text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            Updating and maintaining company systems and networks
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Keep your business running smoothly with our system and network maintenance services. We ensure your technology remains up-to-date, secure, and optimized for peak performance. Trust us to handle the technical details while you focus on your core business.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+        
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-shield-halved text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            Troubleshooting and resolving IT issues
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Get back on track swiftly with our IT issue troubleshooting and resolution services. Our expert team swiftly identifies and fixes technical problems, ensuring minimal downtime and maximum productivity. Rely on us to keep your operations running smoothly.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+        
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-code-branch text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            Rolling out patches and updates.
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Stay secure and up-to-date with our Patch and Update Rollout services. We manage the seamless deployment of critical patches and updates, keeping your systems protected and optimized for peak performance.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+        
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-users-between-lines text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 "
+            >
+            Managing user access permissions and credentials
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Safeguard your data with our User Access Management services. We handle permissions and credentials, ensuring the right people have the right level of access. Protect your sensitive information with our expertise.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+        
+        <div
+          class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow text-center hover:scale-105"
+        >
+          <div class="">
+            <i class="fa-solid fa-cart-shopping text-8xl"></i>
+          </div>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-semibold tracking-tight text-gray-900"
+            >
+            
+E-commerce Site Back Panel Management Service
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Simplify your e-commerce operations with our Back Panel Management Service. We handle inventory, orders, and site functionality, ensuring your online store operates seamlessly. Let us manage the technicalities, so you can focus on sales and growth.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline mr-5"
+          >
+            Talk to Us
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center text-blue-600 hover:underline"
+          >
+            Get Service
+            <svg
+              class="w-3 h-3 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="bg-gray-700">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0 mt-20">
+            <a href="https://skilllab.com/" class="flex items-center">
+              <img
+                src="./images/Logo_skilllab-2.png"
+                class="h-8 mr-3 rounded-full"
+                alt="Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                >Skill<span class="text-pink-500">Lab</span></span
+              >
+            </a>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-2xl">Contact Information</h2>
+            <div class="mt-10">
+                <div class="flex">
+                    <i class="fa-regular fa-map mr-3"></i>
+                    <p class="text-gray-500">
+                        C&B Mor, Kajihata, <br> Rajpara, Rajshahi-6000
+                    </p>
+                </div>
+                <div class="flex mt-5">
+                    <i class="fa-solid fa-phone mr-3"></i>
+                    <p class="text-gray-500">
+                        01798472082
+                    </p>
+                </div>
+                <div class="flex mt-5">
+                    <i class="fa-solid fa-phone mr-3"></i>
+                    <p class="text-gray-500">
+                        01791086553
+                    </p>
+                </div>
+                <div class="flex mt-5">
+                    <i class="fa-brands fa-facebook-f mr-3"></i>
+                    <p class="text-gray-500">
+                        <a href="https://shorturl.at/npqEG">Skilllab It Training Academy</a>
+                    </p>
+                </div>
+                <div class="flex mt-5">
+                    <i class="fa-regular fa-envelope mr-3"></i>
+                    <p class="text-gray-500 break-words">
+                        skilllabitacademy@gmail.com
+                    </p>
+                </div>
+                <div class="flex mt-5">
+                    <i class="fa-solid fa-globe mr-3"></i>
+                    <p class="text-gray-500">
+                        skilllabit.com
+                    </p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="flex-row gap-5 ">
+            
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Legal
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex mt-7 space-x-5 sm:justify-center">
+              <a href="https://www.facebook.com/profile.php?id=100095500092982" class="text-gray-500 hover:text-white">
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-white">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-white">
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="https://github.com/SkilllabIT" class="text-gray-500 hover:text-white">
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="https://www.youtube.com/channel/UCZaK5skyaniGo4y78VdjSjQ" class="text-gray-500 hover:text-white">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="text-center">
+          <span class="text-sm sm:text-center text-gray-400"
+            >© 2023 <a href="#" class="hover:underline">Skilllab™</a>. All
+            Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[44px]') , list.classList.add('block'), list.classList.add('opacity-100'), list.classList.remove('hidden')) :( e.name = "menu" ,list.classList.remove('top-[44px]'),list.classList.remove('opacity-100'), list.classList.add('hidden'))
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,6 @@
+.course img{
+    height: 382px;
+    max-width: 100%;
+    object-fit: fill;
+    width: -webkit-fill-available;
+}
